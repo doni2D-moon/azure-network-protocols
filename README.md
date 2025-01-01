@@ -20,7 +20,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>High-Level Steps</h2>
 
-- Step 1
+- Steps 1
 - Step 2
 - Step 3
 - Step 4
@@ -30,7 +30,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 ![image](https://github.com/user-attachments/assets/f1bb01bc-3094-404a-93c5-adfb6638a192)
 
 <p>
-In this step, will be installing the Windows 10 virtual machine on Microsoft Azure (blue border). After creating the Resource Group (called Network Activities for this example), type "virtual machine" in the search bar and select virtual machines. On the next screen, it will show "Create." Click Create --> Azure virtual machine to create the machine. It will then lead to the window shown above. 1) Give the virtual machine a name --> 2) Select a "region" --> 3) Select the "image" (Windows 10 Pro for this example) --> 4) Select the "size" --> 5) Provide a "username" and "password" found under Administrator account and 6) Check the box under Licensing. Then click next to Disks then to Networking to select the Vnet.
+<strong>Step 1:</strong> In this step, we will be installing the Windows 10 virtual machine on Microsoft Azure (blue border). After creating the Resource Group (called Network-Activities for this example), type "virtual machines" in the search bar and select virtual machines. On the next screen, it will show "Create" on the page. Click "Create" --> "Azure virtual machine" to create the machine. It will then lead to the window shown above. 1) Give the virtual machine a name --> 2) Select a "region" (ex. US East 2) --> 3) Select the "image" (Windows 10 Pro for this example) --> 4) Select the "size" --> 5) Provide a "username" and "password" found under Administrator account and 6) Check the box under Licensing. Then click next to Disks then to Networking to select the Vnet.
 </p>
 <br />
 
