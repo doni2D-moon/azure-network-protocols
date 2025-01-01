@@ -96,7 +96,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 ![image](https://github.com/user-attachments/assets/7e26c3d3-d2ce-44e1-b816-d33cfc77ade6)
 
 <p>
-<strong>Step 10:</strong> Back in the Windows VM, if we give a perpetual ping (Private IP address of Linux) -t in Powershell, it will show "Request timed out" revealing that the firewall of Linux blocked traffic from Windows VM. In Wireshark, we will see multiple requests to the Linux VM (in pink) with no reply.
+<strong>Step 10:</strong> Back in the Windows VM, if we give a perpetual ping (ping *Private IP address of Linux*) -t in Powershell, it will show "Request timed out" revealing that the firewall of Linux blocked traffic from Windows VM. In Wireshark, we will see multiple requests to the Linux VM (in pink) with no reply.
 </p>
 <br />
 
