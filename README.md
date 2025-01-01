@@ -123,26 +123,23 @@ In this step, will be filtering for SSH traffic. Before start filtering for SSH,
 </p>
 <br />
 
+![image](https://github.com/user-attachments/assets/f17d435f-4068-4fda-9cea-b54fabc18e6f)
+
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+In this step, will be filtering with DHCP (udp.port 67 and 68) but to get a new IP address. 1)Type in "dhcp" or "udp.port==67 or udp.port==68" in the green bar. Then click the green fin to clear if by clicking Continue without saving. From here, go to Powershell and type "ipconfig/ renew" to get a new IP address. If only getting Request and Acknowledge, then can create a file with "ipconfig /release, ipconfig /renew" saved in c:\programdata to force it to give a new IP address. In Powershell, 2)type in cd c:\programdata --> ls --> 3) .\file name (ex dhcp.bat) to run the file and get the IP address released and renewed. It will reboot and show "Discover," Offer, Request, and ACK in Wireshark (in blue).
 </p>
 <br />
 
+![image](https://github.com/user-attachments/assets/d3701348-3209-44cd-b591-09ff2fdb40ed)
+
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+In this step, will be filtering for DNS (udp and TCP port 53). Type "DNS" or "udp.port==53 or tcp.port==53" in the green bar. This is where sites we know are translated into IP addresses. Clear the area with Continue without saving (green fin). In Powershell, ping a website (ex. www.google.com or disney.com) and see the IP addresses associated with the sites in Powershell and in Wireshark.
 </p>
 <br />
 
+![image](https://github.com/user-attachments/assets/01429eea-5552-47d8-99c3-a06d9bf6a8c4)
+
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+In this final step, will be filtering RDP (tcp 3389) traffic in Wireshark. Type in "tcp.port==3389" in the green bar and click the green fin to Continue without saving. Then below observe the continous traffic in Wireshark. The above image shows some of the traffic happening in Wireshark.
 </p>
 <br />
